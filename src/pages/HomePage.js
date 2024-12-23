@@ -72,7 +72,7 @@ const HomePage = () => {
           {products.length > 0 ? (
             products.map((product) => (
               <div key={product.id} className="product-item">
-                 <img src={`http://localhost:5000/images/${product.image}`} alt={product.name} />
+                 <img src={`/images/${product.image}`} alt={product.name} />
 
                 <p>{product.name}</p>
                 <p>Price: ₹{product.price}</p>
